@@ -23,9 +23,33 @@ dictionaries= {
         "bench": "Èkpé"
     },
 
+        taly_dictionary = {
+    "tourista": 'tourist',
+    "aereo": 'airplane',  
+    "uomo": 'man',
+    "donna": 'woman',  
+    "treno": 'train',
+    "nuvola": 'cloud',
+    "aurora": 'dawn',
+    "grazie": 'thank you',  
+    "rugiada": 'dew',
+    "aria": 'air',
+    "idillio": 'idyll',
+    "allegria": 'cheerfulness',  
+    "profeta": 'prophet',
+    "magnetico": 'magnetic',
+    "visibilio": 'rapture',
+    "quintessenza": 'quintessence',
+    "azzurro": 'light blue',  
+    "farfalla": 'butterfly',
+    "meraviglia": 'marvel',
+    "euforia": 'euphoria',
 }
 
-# Function to search the selected dictionary
+
+}
+
+
 def search_word():
     selected_dictionary = dictionary_var.get()
     word = entry.get().strip().lower()  # Get user input, trim spaces, and convert to lowercase
