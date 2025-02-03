@@ -6,29 +6,25 @@ import time
 dictionaries = {
     #DOMINION
   "Igala": {
-        "kó": "hello",
-        "mèdà": "thank you",
-        "kó": "goodbye",
-        "jè": "please",
-        "è": "yes",
-        "ò": "no",
-        "èjè": "friend",
-        "èjè-èjè": "family",
-        "òkè": "love",
-        "òbè": "water",
-        "èjè": "food",
-        "èjè-èjè": "house",
-        "èjè-èjè": "school",
-        "èjè": "happy",
-        "èjè": "sad",
-        "èjè": "big",
-        "èjè": "small",
-        "èjè": "beautiful",
-        "èjè": "ugly",
-        "èjè": "strong",
-        "èjè": "weak",
-        "èjè": "work",
-        "èjè": "play"
+        "hello"  :"kó",
+        "thank you": "anẹ",
+        "please": "ẹ biko",
+        "yes": "ẹẹ",
+        "no": "ọda",
+        "water": "ama",
+        "food": "nra",
+        "house": "ụla",
+        "book": "akwụkwọ",
+        "man": "ọmẹ",
+        "woman": "ọb’iyọ",
+        "Head": "Oji",
+        "Hand": "Ówó",
+        "Forehead": "Ógba Oji",
+        "Blood": "Ebié",
+        "Breath": "Imi",
+        "four": "Őnáńá",
+        "bench": "Èkpé"
+
     },
     #RUTH JACE
     "French": {
@@ -65,7 +61,7 @@ dictionaries = {
         "sì": "yes",
         "no": "no",
         "amico": "friend",
-        "famiglia": "family",
+        "familia": "family",
         "amore": "love",
         "acqua": "water",
         "cibo": "food",
@@ -136,7 +132,7 @@ def search_word():
     dictionary = dictionaries[selected_language]
     
     # Simulate loading effect
-    loading_label.config(text="oya wait fes...")
+    loading_label.config(text="please wait...")
     root.update()
     time.sleep(1)  # Simulate a delay for loading
 
@@ -151,8 +147,8 @@ def search_word():
 # Create the main window
 root = tk.Tk()
 root.title("Multi-Language Dictionary")
-root.geometry("100x150")
-root.configure(bg='blue')
+root.geometry("1000x1500")
+root.configure(bg='yellow')
 
 # Create a label for language selection
 language_var = tk.StringVar(value="French")
@@ -164,7 +160,7 @@ language_dropdown = ttk.Combobox(root, textvariable=language_var, values=list(di
 language_dropdown.pack(pady=10)
 
 # Create a label for word entry
-label = tk.Label(root, text="Enter word:", bg='blue', fg='red')
+label = tk.Label(root, text="Enter word:", bg='black', fg='red')
 label.pack(pady=10)
 
 # Create an entry widget
@@ -181,4 +177,4 @@ search_button.pack(pady=20)
 
 # Run the application
 root.mainloop()
-#"Por favor": "Please",
+
